@@ -24,8 +24,8 @@ def generar_numero_pseudo_aleatorios(cantidad_numeros, numero_inicial,cantidad_d
     
     print(df)
 
-semilla_inicial = 4567234902
+semilla_inicial =  4567234902 
 cantidad_numeros = 50
 cantidad_digitos=4
 
-numeros_aleatorios = generar_numero_pseudo_aleatorios(cantidad_numeros, semilla_inicial)
+generar_numero_pseudo_aleatorios(cantidad_numeros, semilla_inicial, cantidad_digitos)
