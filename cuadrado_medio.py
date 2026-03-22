@@ -1,7 +1,6 @@
 import pandas as pd
 
-def generar_numero_pseudo_aleatorios(cantidad_numeros, numero_inicial):
-    cantidad_digitos = len(str(abs(numero_inicial)))
+def generar_numero_pseudo_aleatorios(cantidad_numeros, numero_inicial,cantidad_digitos):
     numero_semilla = numero_inicial
     
     resultados = []
@@ -25,8 +24,8 @@ def generar_numero_pseudo_aleatorios(cantidad_numeros, numero_inicial):
     
     print(df)
 
-semilla_inicial = 154
-cantidad_numeros = 12
-
+semilla_inicial = 4567234902
+cantidad_numeros = 50
+cantidad_digitos=4
 
 numeros_aleatorios = generar_numero_pseudo_aleatorios(cantidad_numeros, semilla_inicial)
